@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CubeSat Mission Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🛰 CubeSat Mission Simulator</h1>
+
+<h2>Battery</h2>
+
+<progress id="batteryBar" value="100" max="100"></progress>
+
+<h3 id="battery">100%</h3>
+<h3>Mission Time</h3>
+
+<h2 id="timer">0 s</h2>
+<h3>Communication</h3>
+
+<h2 id="signal">🟢 Connected</h2>
+
+<button onclick="takeImage()">Take Image</button>
+
+<button onclick="collectData()">Collect Data</button>
+
+<button onclick="transmit()">Transmit Data</button>
+<div class="orbit-container">
+
+    <div class="earth"></div>
+
+    <div class="orbit">
+
+        <div class="satellite">🛰</div>
+
+    </div>
+
+</div>
+
+<h3>Mission Log</h3>
+
+<ul id="log"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
